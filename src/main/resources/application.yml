@@ -1,0 +1,23 @@
+jwt:
+  secret: w4W9i2D6GkM5TnXEMTUlYpZ3mT5Jd94Y0bI+YQpGGeA=
+spring:
+  mvc:
+    format:
+      date: iso
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties.hibernate:
+      batch_size: 50
+      fetch_size: 50
+      show_sql: true
+      format_sql: true
+      hbm2ddl.auto: validate
+    open-in-view: false
+
+logging:
+  level:
+    org.springframework.security: DEBUG
